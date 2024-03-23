@@ -1,11 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>personal-library</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body class="body">
+    <div class="container">
+      <header class="header">
+        <h1 class="header--logo">My-Library</h1>
+        <button class="header--btn">+ Add Book</button>
+      </header>
+      <main class="main">
+        <section class="info-container">
+            <div class="info-div-wrapper">
+                <h2>About Project</h2>
+                <p>This library allows you to store a collection of your personal books.
+                    <ul>
+                        <li> Click on the <em>add</em> book to your collection.</li>
+                        <li> Click on the <em>Delete</em> button to remove a book from the collection.</li>
+                        <li>Click on the <em>Sort by</em> to sort by <em>read</em> or <em>unread</em>.</li>
+                        <li> Click on the <em>read</em> or the <em>unread</em> button to change the status of the book.</li>
+                    </ul>
+                 </p>
+            </div>
+        </section>
+
+        <table id="dataTable">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Author</th>
+              <th>Pages</th>
+              <th>Status</th>
+              <th>
+                <label for="sortSelect">Sort by</label>
+                <select name="sort" id="sortSelect">
+                  <option value="all">All</option>
+                  <option value="read">Read</option>
+                  <option value="unread">Unread</option>
+                </select>
+              </th>
+            </tr>
+          </thead>
+          <tbody class="tbody"></tbody>
+        </table>
+      </main>
+      <footer class="footer">
+        <p>
+          Made with ❤️ by
+          <a href="https://github.com/Heart-n-Soul" class="githubLink">
+            <i class="fa fa-github"></i> Emmanuel Asante</a
+          >
+          ©
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+        </p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
