@@ -38,6 +38,8 @@
   justify-content: space-around;
   align-items: center;
   box-shadow: var(--box-shadow-blk);
+  position:sticky;
+  top: 0;
 }
 
 .header--btn {
