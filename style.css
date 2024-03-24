@@ -19,7 +19,9 @@
 
   --cl-light-blk: rgb(55, 65, 81);
   --bg-cl-ash: #f3f4f6;
+  --white: #fff;
   font-size: 16px;
+
 }
 
 .body {
@@ -40,6 +42,8 @@
   box-shadow: var(--box-shadow-blk);
   position:sticky;
   top: 0;
+  width: 100%;
+  background-color: var(--white);
 }
 
 .header--btn {
