@@ -21,7 +21,6 @@
   --bg-cl-ash: #f3f4f6;
   --white: #fff;
   font-size: 16px;
-
 }
 
 .body {
@@ -40,10 +39,11 @@
   justify-content: space-around;
   align-items: center;
   box-shadow: var(--box-shadow-blk);
-  position:sticky;
+  position: sticky;
   top: 0;
   width: 100%;
   background-color: var(--white);
+  z-index: 1;
 }
 
 .header--btn {
@@ -62,46 +62,44 @@
   border: solid 1px;
 }
 
-.main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.info-container{
-    background-color: var(--bg-cl-ash);
-    width: 90%;
-    border-radius: 10px;
-    margin-top: 40px;
+.info-container {
+  background-color: var(--bg-cl-ash);
+  width: 90%;
+  border-radius: 10px;
+  margin-top: 40px;
 }
 
 .info-div-wrapper p {
-    margin-top: -5px;
-    color: var(--cl-light-blk);
+  margin-top: -5px;
+  color: var(--cl-light-blk);
 }
 
-.info-div-wrapper{
-    padding: 10px 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: .94rem;
-    
+.info-div-wrapper {
+  padding: 10px 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.94rem;
 }
 
-.info-div-wrapper li{
-    color: var(--cl-light-blk);    
+.info-div-wrapper li {
+  color: var(--cl-light-blk);
 }
 
+em {
+  background-image: var(--linear-grad-left);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-em{
-    background-image: var(--linear-grad-left);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;}
-
-
-#dataTable{
+#dataTable {
   width: 90%;
   margin-top: 40px;
 
