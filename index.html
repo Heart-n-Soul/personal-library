@@ -25,21 +25,21 @@
       </header>
       <main class="main">
         <dialog open>
-          <h2>Book details</h2>
-          <form method="dialog">
-            <div>
+          <h2 class="form-header">Book details</h2>
+          <form method="dialog" class="form">
+            <div class="input-wrapper">
 
               <label for="title">Title</label>
               <input type="text" placeholder="e.g. The Blind Date" id="title" name="title" autofocus>
 
             </div>
-            <div>
+            <div class="input-wrapper">
 
               <label for="author">Author</label>
               <input type="text" placeholder="e.g. Vincent de Frere" id="author" name="author">
 
             </div>
-            <div>
+            <div class="input-wrapper">
 
               <label for="pages">Pages</label>
               <input type="number" min="2" max="10000" placeholder="120" id="pages">
@@ -67,8 +67,11 @@
                 
             </fieldset>
 
-            <button type="button">Add Book</button>
-              
+            <div class="form-btn-wrapper">
+
+              <button type="button" class="btn-form btn-close-form">Close</button>
+              <button class="btn-form btn-add-book" type="button">Add Book</button>
+            </div>
 
           </form>
         </dialog>
