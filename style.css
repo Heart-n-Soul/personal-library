@@ -20,6 +20,12 @@
   --cl-light-blk: rgb(55, 65, 81);
   --bg-cl-ash: #f3f4f6;
   --white: #fff;
+  --green-btn:#07c70a;
+  --green-hover: 
+  #067e08;
+  --red: #fa3434;
+  --red-hover: #b50000;
+
   font-size: 16px;
 }
 
@@ -68,6 +74,82 @@
   align-items: center;
 }
 
+
+/* Dialog and form styling */
+
+dialog{
+  border: none;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow-blk);
+}
+
+
+
+.form-header{
+  display: flex;
+  justify-content: center;
+  margin-top: -20px;
+}
+
+.input-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap:3px
+}
+
+.input-wrapper label{
+  font-size: 0.9rem;
+}
+
+input{
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+
+fieldset{
+  border: none;
+}
+
+.radio-wrapper{
+  display: flex;
+  gap: 40px;
+}
+
+
+.form-btn-wrapper{
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn-form{
+  border-radius: 5px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.btn-close-form{
+  background-color: var(--red);
+  color:var(--white);
+  font-weight: 600;
+}
+
+.btn-close-form:hover{
+  background-color: var(--red-hover);
+}
+
+.btn-add-book{
+  background-color: var(--green-btn);
+  color: var(--white);
+}
+
+.btn-add-book:hover{
+  background-color: var(--green-hover);
+}
+
+
+
 .info-container {
   background-color: var(--bg-cl-ash);
   width: 90%;
@@ -77,7 +159,7 @@
 
 .info-div-wrapper p {
   margin-top: -5px;
-  color: var(--cl-light-blk);
+  color: var(--cl-light-bl);
 }
 
 .info-div-wrapper {
@@ -108,12 +190,19 @@ em {
   margin-bottom: 50px;
   box-shadow: var(--box-shadow-blk);
 }
-/* select {
+
+select {
   width: 18px;
   height: 20px;
   outline: none;
   border: none;
-} */
+}
+
+
+
+tbody{
+  color: var(--cl-light-blk);
+}
 
 /* select:focus {
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
