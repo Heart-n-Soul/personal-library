@@ -20,10 +20,12 @@ myDialog.addEventListener("close", closeModal);
 
 function closeModal() {
   myDialog.close();
+  document.body.classList.remove("modal-open");
   backdrop.style.display = "none";
 }
 
 function openDialog() {
+  document.body.classList.add("modal-open");
   backdrop.style.display = "block";
   myDialog.showModal();
 }
