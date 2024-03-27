@@ -25,7 +25,7 @@
         <button class="header--btn">+ Add Book</button>
       </header>
       <main class="main">
-          <dialog class="myDialog" open>
+          <dialog class="myDialog" >
             <h2 class="form-header">Book details</h2>
             <form method="dialog" class="form">
               <div class="input-wrapper">
@@ -81,7 +81,7 @@
                 <h2>About Project</h2>
                 <p>This library allows you to store a collection of your personal books.
                     <ul>
-                        <li> Click on the <em>add</em> book to your collection.</li>
+                        <li> Click on the <em>add book</em>  to add a book to your collection.</li>
                         <li> Click on the <em>Delete</em> button to remove a book from the collection.</li>
                         <li>Click on the <em>Sort by</em> to sort by <em>read</em> or <em>unread</em>.</li>
                         <li> Click on the <em>read</em> or the <em>unread</em> button to change the status of the book.</li>
@@ -98,7 +98,7 @@
               <th>Pages</th>
               <th>Status</th>
               <th>
-                <label for="sortSelect">Sort by</label>
+                <label for="sortSelect" class="sort">Sort by</label>
                 <select name="sort" id="sortSelect">
                   <option value="all">All</option>
                   <option value="read">Read</option>
