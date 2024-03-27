@@ -94,7 +94,8 @@
 dialog{
   position: fixed;
   top: 50%;
-  left: 50%;
+  left: 50%; 
+  right: 50%;
   padding: 30px 20px;
   border: 1px solid black;
   border-radius: 10px;
@@ -202,17 +203,17 @@ fieldset{
   flex-direction: column;
   align-items: center;
   font-size: 0.94rem;
-}
-
-.info-div-wrapper li {
   color: var(--cl-light-blk);
 }
 
+.info-div-wrapper h2{
+  color: #000000;
+}
+
 em {
-  background-image: var(--linear-grad-left);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #000000;
+  font-weight: 600;
+ 
 }
 
 #dataTable {
@@ -224,6 +225,8 @@ em {
   margin-bottom: 50px;
   box-shadow: var(--box-shadow-blk);
 }
+
+
 
 select {
   width: 18px;
@@ -238,19 +241,6 @@ tbody{
   color: var(--cl-light-blk);
 }
 
-/* select:focus {
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-} */
-
-/* select option {
-  position: absolute;
-  box-sizing: border-box;
-  padding: 5px;
-  width: 100%;
-  border-style: solid;
-
-  border-radius: 20px;
-} */
 
 .footer {
   font-size: 0.92rem;
