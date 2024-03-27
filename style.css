@@ -74,15 +74,36 @@
   align-items: center;
 }
 
+/* backdrop */
+
+#backdrop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  backdrop-filter: blur(5px);
+  display: none;
+}
+
 
 /* Dialog and form styling */
 
 dialog{
-  border: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 30px 20px;
+  border: 1px solid black;
   border-radius: 10px;
   box-shadow: var(--box-shadow-blk);
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 3;
+  
 }
-
 
 
 .form-header{
@@ -105,6 +126,19 @@ input{
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 10px;
+  box-shadow: var(--box-shadow-blk);
+}
+
+input:user-invalid{
+  border: solid #df0d0d;
+}
+
+input:user-valid{
+  border: 3px solid #29cb26
+}
+
+input[type="radio"]{
+  cursor: pointer;
 }
 
 
