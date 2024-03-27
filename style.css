@@ -20,9 +20,8 @@
   --cl-light-blk: rgb(55, 65, 81);
   --bg-cl-ash: #f3f4f6;
   --white: #fff;
-  --green-btn:#07c70a;
-  --green-hover: 
-  #067e08;
+  --green-btn: #07c70a;
+  --green-hover: #067e08;
   --red: #fa3434;
   --red-hover: #b50000;
 
@@ -34,7 +33,7 @@
   line-height: 1.5;
 }
 
-body.modal-open{
+body.modal-open {
   overflow: hidden;
 }
 
@@ -80,7 +79,7 @@ body.modal-open{
 
 /* backdrop */
 
-#backdrop{
+#backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -92,14 +91,15 @@ body.modal-open{
   display: none;
 }
 
-
 /* Dialog and form styling */
 
-dialog{
+.myDialog {
   position: fixed;
   top: 50%;
-  left: 50%; 
-  right: 50%;
+  /* margin-top: 0px; */
+  left: 50%;
+  
+
   padding: 30px 20px;
   border: 1px solid black;
   border-radius: 10px;
@@ -107,87 +107,81 @@ dialog{
   transform: translate(-50%, -50%);
   transition: opacity 0.3s ease, transform 0.3s ease;
   z-index: 3;
-  
 }
 
-
-.form-header{
+.form-header {
   display: flex;
   justify-content: center;
   margin-top: -20px;
 }
 
-.input-wrapper{
+.input-wrapper {
   display: flex;
   flex-direction: column;
-  gap:3px
+  gap: 3px;
 }
 
-.input-wrapper label{
+.input-wrapper label {
   font-size: 0.9rem;
 }
 
-input{
+input {
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 10px;
   box-shadow: var(--box-shadow-blk);
 }
 
-input:user-invalid{
+input:user-invalid {
   border: solid #df0d0d;
 }
 
-input:user-valid{
-  border: 3px solid #29cb26
+input:user-valid {
+  border: 3px solid #29cb26;
 }
 
-input[type="radio"]{
+input[type="radio"] {
   cursor: pointer;
 }
 
-
-fieldset{
+fieldset {
   border: none;
 }
 
-.radio-wrapper{
+.radio-wrapper {
   display: flex;
   gap: 40px;
 }
 
-
-.form-btn-wrapper{
+.form-btn-wrapper {
   display: flex;
   justify-content: space-around;
 }
 
-.btn-form{
+.btn-form {
   border-radius: 5px;
   padding: 8px;
   cursor: pointer;
 }
 
-.btn-close-form{
+.btn-close-form {
   background-color: var(--red);
-  color:var(--white);
+  color: var(--white);
   font-weight: 600;
 }
 
-.btn-close-form:hover{
+.btn-close-form:hover {
   background-color: var(--red-hover);
 }
 
-.btn-add-book{
+.btn-add-book {
   background-color: var(--green-btn);
   color: var(--white);
 }
 
-.btn-add-book:hover{
+.btn-add-book:hover {
   background-color: var(--green-hover);
 }
-
-
 
 .info-container {
   background-color: var(--bg-cl-ash);
@@ -210,14 +204,13 @@ fieldset{
   color: var(--cl-light-blk);
 }
 
-.info-div-wrapper h2{
+.info-div-wrapper h2 {
   color: #000000;
 }
 
 em {
   color: #000000;
   font-weight: 600;
- 
 }
 
 #dataTable {
@@ -230,8 +223,6 @@ em {
   box-shadow: var(--box-shadow-blk);
 }
 
-
-
 select {
   width: 18px;
   height: 20px;
@@ -239,12 +230,9 @@ select {
   border: none;
 }
 
-
-
-tbody{
+tbody {
   color: var(--cl-light-blk);
 }
-
 
 .footer {
   font-size: 0.92rem;
@@ -271,4 +259,11 @@ tbody{
 
 .githubLink:hover {
   background-image: var(--linear-grad-left);
+}
+
+
+@media (min-width: 800px) {
+  .myDialog{
+    right: 50%;
+  }
 }
