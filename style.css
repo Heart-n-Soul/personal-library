@@ -25,7 +25,7 @@
   --red: #fa3434;
   --red-hover: #b50000;
 
-  font-size: 16px;
+  font-size: clamp(1rem, 0.75rem + 1.5vw, 2rem);
 }
 
 .body {
